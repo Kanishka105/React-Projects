@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import "./index.css";
 export default function App() {
   const [count2, setCount2] = useState(0);
   const [isOpen, setOpen] = useState(false);
