@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 64.5%;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(165, 206, 239);
+}
+.arrange {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4rem;
+  gap: 10px;
+}
+.box {
+  background-color: aliceblue;
+  font-size: 1.2rem;
+  height: 10rem;
+  font-weight: 500;
+  align-self: center;
+  text-align: center;
+  padding: 0.9rem 2rem;
+  padding-bottom: 7rem;
+  border-radius: 10px;
+}
+.btn {
+  background-color: rgb(165, 206, 239);
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
