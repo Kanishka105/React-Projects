@@ -1,4 +1,4 @@
-import "./App.css";
+import "./index.css";
 import { useState } from "react";
 
 const questionArr = [
