@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 64.5%;
+}
+body {
+  background-color: rgb(216, 245, 224);
+  font-family: Arial, Helvetica, sans-serif;
+  word-spacing: 0.4rem;
+}
+.main {
+  margin: 2rem auto;
+  width: 69vw;
+}
+span {
+  color: rgb(118, 116, 116);
+  margin-right: 0.8rem;
+  font-size: 1.9rem;
+}
+h3 {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+p {
+  background-color: white;
+  color: rgb(32, 140, 59);
+  font-size: 1.5rem;
+  padding: 1rem 2.6rem;
+}
+.highlight {
+  border-top: 4px solid rgb(51, 207, 51);
+}
+.queNum {
+  color: rgb(33, 154, 33);
+}
+.section {
+  padding: 2rem 2rem;
+  color: black;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background-color: white;
+  box-shadow: 2px 4px 8px rgb(134, 180, 122);
+}
