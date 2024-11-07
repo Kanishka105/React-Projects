@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+html {
+  font-size: 64.5%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.tab-block {
+  position: absolute;
+  display: flex;
+  top: -1rem;
+  left: 8rem;
+  gap: 2rem;
+}
+.app {
+  margin: 3rem auto;
+  max-width: 55rem;
+  position: relative;
+  box-shadow: 2px 4px 8px rgb(101, 96, 96);
+  border-radius: 15px;
+}
+.tab {
+  box-shadow: 2px 4px 8px grey;
+  padding: 0.9rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  background-color: rgb(177, 50, 18);
+}
+
+.red {
+  background-color: red;
+}
+.red:hover {
+  background-color: rgb(224, 92, 92);
+  transform: translateY(-0.3rem);
+  transition: all 0.5s;
+}
+.yellow {
+  background-color: rgb(61, 194, 228);
+}
+.yellow:hover {
+  background-color: rgb(136, 200, 216);
+  transform: translateY(-0.3rem);
+  transition: all 1s;
+}
+.green {
+  background-color: rgb(33, 210, 33);
+}
+.green:hover {
+  transform: translateY(-0.3rem);
+  transition: all 1s;
+  background-color: rgb(117, 235, 117);
+}
+.tab-content {
+  background-color: white;
+  padding: 6rem 6rem;
+  border-radius: 15px;
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+.flex span {
+  border-radius: 100%;
+  font-size: 2rem;
+
+  text-align: center;
+  color: rgb(183, 19, 123);
+}
+.flex h2 {
+  font-size: 1.9rem;
+}
+.about {
+  word-spacing: 0.2rem;
+  line-height: 1.4;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
