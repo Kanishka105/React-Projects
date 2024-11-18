@@ -1,0 +1,39 @@
+import React, { useState } from "react";
+import "./App.css";
+export default function App() {
+  const [[latitude, longitude], setarr] = useState([]);
+  const [c, setc] = useState(0);
+  const [isLoading, setLoading] = useState(false);
+  const URL = `https://www.google.com/maps/@${latitude},${longitude},12z?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D`;
+  return (
+    <div className="app">
+      <button onClick={() => {setLoading(true);
+          navigator.geolocation.getCurrentPosition(
+            (ob) => {setarr(() => [ob.coords.latitude, ob.coords.longitude]);
+              setLoading(false);},
+            (error) => alert(error.message)
+          ); setc(() => c + 1);
+        }}>
+        Get my Position
+      </button>
+      {c > 0 ? ( isLoading ? (<p>Loading...</p>) : (
+          <div>
+            <h3>Your GPS position coordinated: </h3>
+            <ul>
+              <li>
+                latitude<a href={URL}>{latitude} </a>
+              </li>
+              <li>
+                longitude:
+                <a href={URL}>{longitude}</a>
+              </li>
+            </ul>
+          </div>
+        )
+      ) : null}
+<p className="times">
+        You requested the position <span>{c}</span> times
+      </p>
+    </div>
+  );
+}
