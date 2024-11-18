@@ -1,0 +1,30 @@
+.app {
+  margin: 2rem auto;
+  width: 50vw;
+  text-align: center;
+}
+.app button {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border: 2px solid black;
+}
+.times {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.times span {
+  color: red;
+}
+ul li {
+  list-style: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+a:visited,
+a:link {
+  color: red;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
